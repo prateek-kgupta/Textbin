@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="bold but" onclick="bold()">
+            <b>B</b>
+        </div>
+
+        <div class="italic but" onclick="italic()">
+            <i>I</i>
+        </div>
+
+        <div class="underline but" onclick="underline()">
+            <u>U</u>
+        </div>
+
+        <div class="strth but" onclick="strikethrough()">A</div>
+
+        <div class="txtclr but" onclick="txtclr()">
+            A
+            <input type="color" id="no" onchange="fclrchange()">
+        </div>
+
+        <div class="font">
+            <select id="ffam" onchange="ffam()">
+                <option>Arial</option>
+                <option>Bookman Old Style</option>
+                <option>Calibri</option>
+                <option>Forte</option>
+                <option>Gill Sans MT</option>
+                <option>Ink Free</option>
+                <option>Lucida Calligraphy</option>
+                <option>Lucida Handwriting</option>
+                <option>Matura MT Script Capitals</option>
+                <option selected>Monospace</option>
+                <option>Times New Roman</option>
+            </select>
+        </div>
+
+        <div class="fsize">
+            <select id="fsize" onchange="fsize()">
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>14</option>
+                <option>16</option>
+                <option>18</option>
+                <option selected>20</option>
+                <option>22</option>
+                <option>24</option>
+                <option>26</option>
+                <option>28</option>
+                <option>36</option>
+                <option>48</option>
+                <option>72</option>
+            </select>
+        </div>
+
+        <div class="bgclr">
+            <input type="color" name="bgcolor" value="#101E1E" onchange="colorChange()">
+        </div>
+    </div>
+    <hr>
+    <div class="main">
+        <textarea id="tarea">This is demo text</textarea>
+    </div>
+
+</body>
+
+</html>
